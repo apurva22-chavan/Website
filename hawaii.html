@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hawaii</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://wallup.net/wp-content/uploads/2017/11/23/524612-nature-Hawaii-landscape-mountains-clouds-water-aerial_view-birds_eye_view-Jurassic_Park.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .hotels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hotel-card .content {
+      padding: 20px;
+    }
+
+    .hotel-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .hotel-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .hotel-card a {
+      color: #fff;
+      background: #0077b6;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    nav {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover the Hawaii</h1>
+  </header>
+
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="images">
+      <img src="https://th.bing.com/th/id/OIP.ZbSzq7iXyL3r3dUtSp_ZgQAAAA?rs=1&pid=ImgDetMain" alt="Hawaii Beach">
+      <img src="https://preview.redd.it/73nnik65iz301.jpg?auto=webp&s=72c1f8ece8baba4e2545cb43fef39746e8b14533" alt="Hawaiian Volcano">
+      <img src="https://cdn.wallpapersafari.com/25/55/sVZHh2.jpg" alt="Hawaii Sunset">
+      <img src="https://cdn.wallpapersafari.com/0/85/n2z1pv.jpg" alt="Maui Coastline">
+    </div>
+  </section>
+
+  <section>
+    <h2>Top Hotels in Hawaii</h2>
+    <div class="hotels">
+      <div class="hotel-card">
+        <img src="https://www.fourseasons.com/alt/img-opt/~70..40,1285-335,0723-2959,8715-1664,9277/publish/content/dam/fourseasons/images/web/KON/KON_858_original.jpg" alt="Four Seasons Hawaii">
+        <div class="content">
+          <h3>Four Seasons Resort Hualalai</h3>
+          <p>Luxurious Hawaiian-style resort with stunning beachfront and world-class service.</p>
+          <a href="https://www.fourseasons.com/hualalai/">Visit Site</a>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/R.40eb8590d21a519b45c38e8085f9f934?rik=U0xTZ2lRUG7P7A&riu=http%3a%2f%2fwww.telegraph.co.uk%2fcontent%2fdam%2fTravel%2fhotels%2fnorth-america%2fhawaii%2fhalekulani-hawaii-p.jpg&ehk=x%2b8rfzQCI1eqPujfMXmXITJSSr%2frsGpaJzMvFcUb6XQ%3d&risl=&pid=ImgRaw&r=0" alt="Halekulani Oahu">
+        <div class="content">
+          <h3>Halekulani, Oahu</h3>
+          <p>Timeless luxury on Waikiki Beach with oceanfront views and serene ambiance.</p>
+          <a href="https://www.halekulani.com/">Visit Site</a>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.uqi5E9vCIPIZk5SMnSpMAQHaEJ?rs=1&pid=ImgDetMain" alt="Mauna Lani">
+        <div class="content">
+          <h3>Mauna Lani, Auberge Resorts</h3>
+          <p>Eco-luxury on the Big Island with cultural activities, spa, and crystal-clear beaches.</p>
+          <a href="https://aubergeresorts.com/maunalani/">Visit Site</a>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://i.pinimg.com/originals/7c/86/65/7c8665e3831a9a010c5c014a86316fd3.jpg" alt="Ritz-Carlton Kapalua">
+        <div class="content">
+          <h3>The Ritz-Carlton, Kapalua</h3>
+          <p>Elegant resort surrounded by nature preserves with top-tier dining and beachfront access.</p>
+          <a href="https://www.ritzcarlton.com/en/hotels/kapalua">Visit Site</a>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.qQsOm6MH04_rDNBcdQ1f1QHaEK?rs=1&pid=ImgDetMain" alt="Wailea Beach Resort">
+        <div class="content">
+          <h3>Wailea Beach Resort – Marriott, Maui</h3>
+          <p>Family-friendly luxury with infinity pools, waterslides, and breathtaking views.</p>
+          <a href="https://www.marriott.com/en-us/hotels/hnmmc-wailea-beach-resort-marriott-maui/overview/">Visit Site</a>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <img src="https://i.travelapi.com/hotels/3000000/2870000/2860200/2860193/6b32dea8_z.jpg" alt="Trump International Hotel Waikiki">
+        <div class="content">
+          <h3>Trump International Hotel Waikiki</h3>
+          <p>Upscale modern suites just steps from Waikiki Beach, with panoramic ocean views.</p>
+          <a href="https://www.trumphotels.com/waikiki">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <nav style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #0077b6; font-size: 1.1rem; font-weight: bold;">
+      ← Go to Previous Page
+    </a>
+  </nav>
+
+  <footer>
+    © 2025 Hawaii Getaway. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bali</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('https://imgs.search.brave.com/cz01hcMAWkDGL8DKXgv5zu2qvUIXd50_iPdnHqxmsDk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJpcHBsYW5uZXJz/aW5kaWEuY29tL2Fz/c2V0cy9ibG9nL2lt/YWdlcy9wbGFjZXN0/b3Zpc2l0aW5iYWxp/L0JhbGkud2VicA') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 4rem;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .hotels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hotel-card .content {
+      padding: 20px;
+    }
+
+    .hotel-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .hotel-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .hotel-card a {
+      color: #fff;
+      background: #0077b6;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover the Bali</h1>
+  </header>
+
+  <section>
+    <h2>Photo Gallery</h2>
+    <div class="images">
+      <img src="https://th.bing.com/th/id/OIP.VBpZy6iRtNjYh0b96bubkwHaFV?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bali Beach">
+      <img src="https://handluggageonly.co.uk/wp-content/uploads/2017/10/Pura-Ulun-Danu-Bratan.jpg" alt="Bali Temple">
+      <img src="https://wallpaperaccess.com/full/1937829.jpg" alt="Bali Sunset">
+      <img src="https://th.bing.com/th/id/R.02b031235f9d25682932b163d40d6ed1?rik=ZnghBWngyRuumg&riu=http%3a%2f%2ffindingbeyond.com%2fapp%2fuploads%2f2017%2f07%2fubud-rice-fields-walk-cover.jpg&ehk=wCIFNBCiT5Q8llty3dHxqRAFkfMwdTOP61JslzOEyPg%3d&risl=&pid=ImgRaw&r=0" alt="Ubud Rice Fields">
+    </div>
+  </section>
+
+  <section>
+    <h2>Top Hotels in Bali</h2>
+    <div class="hotels">
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.LnPxb6cVeF1bpyqyf_IjfwHaFD?w=271&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Four Seasons Bali">
+        <div class="content">
+          <h3>Four Seasons Resort Bali</h3>
+          <p>Luxury beachfront resort with private villas, lush gardens, and exceptional service.</p>
+          <a href="https://www.fourseasons.com/bali/">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.HPDFP_LE7aObPI-V_hjdGgHaD4?rs=1&pid=ImgDetMain" alt="Kayumanis Jimbaran">
+        <div class="content">
+          <h3>Kayumanis Jimbaran</h3>
+          <p>Elegant private villas near the beach, ideal for romance and relaxation.</p>
+          <a href="https://www.kayumanis.com/jimbaran/">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.Q7ao0zFs1aTfhimmgH2gWwHaEK?rs=1&pid=ImgDetMain" alt="The Legian Bali">
+        <div class="content">
+          <h3>The Legian Bali</h3>
+          <p>Upscale beachfront hotel offering ocean views, infinity pools, and fine dining.</p>
+          <a href="https://www.lhm-hotels.com/hotels/the-legian-bali/">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.Rzc_2Kmfiwb3FYHhnrJM-AHaEq?rs=1&pid=ImgDetMain" alt="W Bali Seminyak">
+        <div class="content">
+          <h3>W Bali - Seminyak</h3>
+          <p>Trendy and stylish resort with beachfront views and vibrant nightlife vibes.</p>
+          <a href="https://www.marriott.com/en-us/hotels/dpswh-w-bali-seminyak/">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.iZ1eZD_agtR6C6olBCKj5wAAAA?rs=1&pid=ImgDetMain" alt="Ayana Resort">
+        <div class="content">
+          <h3>AYANA Resort & Spa</h3>
+          <p>Clifftop resort with private beach, oceanfront pools, and the iconic Rock Bar.</p>
+          <a href="https://www.ayana.com/bali/ayana-resort-and-spa">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <img src="https://th.bing.com/th/id/OIP.IT2QPGGAsvqgsmu-mATCDAHaEK?rs=1&pid=ImgDetMain" alt="Alila Manggis">
+        <div class="content">
+          <h3>Alila Manggis</h3>
+          <p>Peaceful escape on Bali’s east coast surrounded by palm groves and black sand.</p>
+          <a href="https://www.alilahotels.com/manggis/">Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #0077b6; font-size: 1.1rem; font-weight: bold;">
+      ← Go to Previous Page
+    </a>
+  </nav>
+
+  <footer>
+    © 2025 Bali Escape. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
